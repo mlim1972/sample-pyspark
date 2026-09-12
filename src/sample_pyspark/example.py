@@ -1,10 +1,10 @@
-"""Example PySpark usage for auto-spark project."""
+"""Example PySpark usage for sample-pyspark project."""
 
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 
 
-def create_spark_session(app_name: str = "auto-spark") -> SparkSession:
+def create_spark_session(app_name: str = "sample-pyspark") -> SparkSession:
     """Create and return a Spark session."""
     return (
         SparkSession.builder.appName(app_name)

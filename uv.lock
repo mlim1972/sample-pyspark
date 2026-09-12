@@ -3,17 +3,6 @@ revision = 3
 requires-python = ">=3.11"
 
 [[package]]
-name = "auto-spark"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "pyspark" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "pyspark", specifier = "==3.5.3" }]
-
-[[package]]
 name = "py4j"
 version = "0.10.9.7"
 source = { registry = "https://pypi.org/simple" }
@@ -30,3 +19,14 @@ dependencies = [
     { name = "py4j" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/9a/90/cb80c8cf194958ab9a3242851c62fa5aef1a0b42f2d9642f1e2eca098005/pyspark-3.5.3.tar.gz", hash = "sha256:68b7cc0c0c570a7d8644f49f40d2da8709b01d30c9126cc8cf93b4f84f3d9747", size = 317304325, upload-time = "2024-09-24T00:28:04.861Z" }
+
+[[package]]
+name = "sample-pyspark"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "pyspark" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pyspark", specifier = "==3.5.3" }]

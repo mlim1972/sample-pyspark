@@ -1,4 +1,4 @@
-# auto-spark
+# sample-pyspark
 
 A PySpark 3.5.3 project configured for Java 17, managed with [uv](https://github.com/astral-sh/uv).
 
@@ -20,13 +20,13 @@ uv sync
 
 ```bash
 # Method-chaining API example (DataFrame operations)
-uv run python -m auto_spark.example
+uv run python -m sample_pyspark.example
 
 # SQL syntax example (using spark.sql)
-uv run python src/auto_spark/sql_example.py
+uv run python src/sample_pyspark/sql_example.py
 ```
 
-**Method-chaining API example** (`auto_spark.example`):
+**Method-chaining API example** (`sample_pyspark.example`):
 - Creates a DataFrame with sample employee data
 - Filters for Engineering department employees
 - Calculates average age by department
@@ -51,12 +51,12 @@ spark.stop()
 ## Project Structure
 
 ```
-auto-spark/
+sample-pyspark/
 ├── pyproject.toml          # Project configuration & dependencies
 ├── uv.lock                 # Locked dependencies
 ├── .python-version         # Python version (3.11)
 ├── src/
-│   └── auto_spark/
+│   └── sample_pyspark/
 │       ├── __init__.py     # Package entry point
 │       ├── example.py      # Example PySpark usage (method-chaining API)
 │       └── sql_example.py  # Example PySpark usage (SQL syntax)
@@ -126,7 +126,7 @@ Set `SPARK_LOCAL_IP` if you need to bind to a specific interface:
 
 ```bash
 export SPARK_LOCAL_IP=127.0.0.1
-uv run python -m auto_spark.example
+uv run python -m sample_pyspark.example
 ```
 
 ## License

@@ -1,9 +1,9 @@
-"""Example PySpark usage with SQL syntax for auto-spark project."""
+"""Example PySpark usage with SQL syntax for sample-pyspark project."""
 
 from pyspark.sql import SparkSession
 
 
-def create_spark_session(app_name: str = "auto-spark-sql") -> SparkSession:
+def create_spark_session(app_name: str = "sample-pyspark-sql") -> SparkSession:
     """Create and return a Spark session."""
     return (
         SparkSession.builder.appName(app_name)
